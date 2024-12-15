@@ -34,7 +34,7 @@ public interface OgrenciRepository extends JpaRepository<Ogrenci, Long> {
     List<Ogrenci> findGirlsWithOgrno();
 
     // Öğrencileri adına göre sıralayınız (alfabetik)
-    String QUESTION_6 = "select * from ogrenci order by ad asc";
+    String QUESTION_6 = "select * from ogrenci order by ad";
     @Query(value = QUESTION_6, nativeQuery = true)
     List<Ogrenci> findStudentsAlphabetically();
 
